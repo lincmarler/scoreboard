@@ -1,0 +1,21 @@
+.main-center {
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: lightblue;
+}
+
+body {
+    background-color: lightblue;
+}
+
+main {
+    color: white;
+}
+
+.stadiumPic {
+    width: 95%;
+    height: 500px;
+}

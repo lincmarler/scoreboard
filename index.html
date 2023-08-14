@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>ScoreBoard</title>
+</head>
+
+<style>
+    body.debug .container,
+    body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+    }
+
+    body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+    }
+</style>
+
+<body class="">
+    <header class="container-fluid text-center p-3">
+        <h2 class="col-12 ">Thursday Night Football</h2>
+        <button class="col-2 btn btn-warning p-2" onclick="resetScore()">
+            RESET
+        </button>
+    </header>
+    <main class="container-fluid">
+        <section class="main-center p-3 mt-2 bg-secondary">
+            <section class="row main-center text-center">
+                <h1 class="col-3">HOME</h1>
+                <h1 class="col-3">AWAY</h1>
+            </section>
+            <section class="row fs-1 main-center text-center">
+                <div class="col-4 p-5 bg-danger" id="HomeScore">0</div>
+                <div class="col-4 p-5 bg-success" id="AwayScore">0</div>
+            </section>
+            <section class="row main-center text-center">
+                <h3 class="col-3"><button class="btn btn-danger" onclick="clickHome7()">HOME +7</button></h3>
+                <h3 class="col-3"><button class="btn btn-success" onclick="clickAway7()">AWAY +7</button></h3>
+            </section>
+            <section class="row main-center text-center">
+                <h3 class="col-3"><button class="btn btn-danger" onclick="clickHome3()">HOME +3</button></h3>
+                <h3 class="col-3"><button class="btn btn-success" onclick="clickAway3()">AWAY +3</button></h3>
+            </section>
+        </section>
+        <section>
+            <div class="col-12 text-center">
+                <img class="stadiumPic"
+                    src="https://images.unsplash.com/photo-1508950996138-7d3ec1e478c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2066&q=80"
+                    alt="stadium">
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
